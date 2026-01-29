@@ -1,0 +1,49 @@
+---
+description: Use shadcn UI components for all UI elements in this project
+alwaysApply: true
+---
+
+# shadcn UI Usage
+
+This project uses **shadcn UI** for all UI elements. Always use shadcn components instead of creating custom components or using other UI libraries.
+
+## Initialization
+
+If shadcn UI is not initialized in the project, run:
+
+```bash
+npx shadcn@latest init
+```
+
+## Installing Components
+
+If a particular component is not installed, use the following command format:
+
+```bash
+npx shadcn@latest add <component-name>
+```
+
+**Examples:**
+- Install button component: `npx shadcn@latest add button`
+- Install dialog component: `npx shadcn@latest add dialog`
+- Install card component: `npx shadcn@latest add card`
+
+## Guidelines
+
+- **Always check** if a shadcn component exists before creating custom UI elements
+- **Install missing components** using the `npx shadcn@latest add` command
+- **Use shadcn components** directly from `@/components/ui/` directory
+- **Customize** shadcn components by editing them in place (they're copied to your project)
+- **Never** create custom UI components that duplicate shadcn functionality
+
+## Component Location
+
+shadcn components are located in:
+- `src/components/ui/` (or `components/ui/` depending on project structure)
+
+## Configuration
+
+The project's shadcn configuration is in `components.json`. Check this file for:
+- Component aliases (`@/components`)
+- Style configuration
+- TypeScript/TSX settings
